@@ -28,14 +28,6 @@
 
 ![Nameserver-Config](./Images/domain.png)
 
-### Creating a record in Route 53 pointing to the Ip-address of our Load Balancer
-
-![Route-53-record-for-Load-balancer](./Images/new-record-created-in-our-load-balancer-with-its-public-Ip-address.png)
-
-### New Route 53 Record with wwww also pointing to Route 53
-
-![New-Route-53-record-with-www-for-Load-balancer](./Images/new-record-with-www-created-pointing-to-Nginx-LB-address.png)
-
 ### Configuring NginxLB with Webserver Names defined in etc Hostfile
 
 `sudo vi /etc/nginx/nginx.conf`
