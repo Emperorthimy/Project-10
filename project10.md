@@ -31,19 +31,8 @@
 ### Configuring NginxLB with Webserver Names defined in etc Hostfile
 
 `sudo vi /etc/nginx/nginx.conf`
+
 ![nginxLB-config-with-webserver-names-defined-in-ect-hostfiles](./Images/nginx.conf.png)
-
-### Removing default site to allow reverse proxy to redirect to our new config file and testing to ensure our Nginx config is okay
-
-`sudo rm -f /etc/nginx/sites-enabled/default`
-
-`sudo nginx -t`
-![removing-default-site-to-allow-new-config-file-run-and-testing-our-nginx-config](./Images/removing-default-site-to-allow-new-config-file-run-and-testing-our-nginx-config.png)
-
-### Linking our LB config file in site-available to site-enables to allow Nginx access our Config
-
-`sudo ln -s ../sites-available/load_balancer.conf .`
-![linking-LB-config-file-in-site-available-to-site-enabled](./Images/linking-LB-config-file-in-site-available-to-site-enabled.png)
 
 ### Accessing our newly registered Domian from URL
 
